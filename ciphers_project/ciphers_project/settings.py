@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-&1#roc4$c$#btaa21unjj6*nm15254=m1&v&ur63vm5j@r!p&d'
+SECRET_KEY = 'django-insecure-3l6z$!*k$&r1y2o088667ne2_m&und5$qbo$uo-u%^&f061-^g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','0.0.0.0','cipher-service-krishna1priya.onrender.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'api.apps.ApiConfig',
+    'rest_framework',
     'corsheaders'
 ]
 
@@ -125,3 +125,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', 'ciphers-service-krishna1priya.onrender.com']
+CORS_ALLOWED_ORIGINS = [
+    "https://krishna1priya.github.io",
+    "http://localhost:3000"
+]
